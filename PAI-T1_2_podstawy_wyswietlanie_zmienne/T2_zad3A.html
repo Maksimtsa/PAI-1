@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="output1"></p>
+    <script>
+        var country = "Polska";
+        var continent = "Europe";
+        var population = 36;
+
+        let info = `Państwo ${country} leży w ${continent} i ma ${population} milionów ludzi`;
+
+        //A
+        console.log(info);
+
+        //B
+        alert(info);
+
+        //C
+        document.write(info);
+
+        //D
+        document.getElementById("output1").innerHTML = info;
+
+    </script>
+</body>
+
+</html>
