@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="side a"></p>
+    <p id="side b"></p>
+    <p id="area"></p>
+    <p id="perimeter"></p>
+    <script>
+        //A
+        /*
+        let a = parseFloat(prompt("bok a:"))
+        let b = parseFloat(prompt("bok b:"))
+        let area = a * b;
+        let perimeter = 2 * a + 2 * b;
+        document.write(`bok a = <b>${a} cm</b>`);
+        document.write(`</br>bok b = <b>${b} cm</b>`);
+        document.write(`</br>pole = <b>${area} cm^2</b>`);
+        document.write(`</br>obwód = <b>${perimeter} cm</b>`);
+        */
+        //B
+        let a = parseFloat(prompt("bok a:"))
+        let b = parseFloat(prompt("bok b:"))
+        let area = a * b;
+        let perimeter = 2 * a + 2 * b;
+        document.getElementById("side a").innerHTML = (`bok a = <b> ${a} cm</b>`);
+        document.getElementById("side b").innerHTML = (`bok b = <b>${b} cm</b>`);
+        document.getElementById("area").innerHTML = (`pole = <b>${area} cm^2</b>`);
+        document.getElementById("perimeter").innerHTML = (`obwód = <b>${perimeter} cm</b>`);
+
+    </script>
+</body>
+
+</html>
