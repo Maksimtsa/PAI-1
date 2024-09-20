@@ -10,12 +10,17 @@
 
 <body>
     <script>
+    <script>
         let name = parseint(prompt("Podaj swoje Imię: "))
         let surname = parseFloat(prompt("Podaj swoje Nazwisko: "))
         let adress = parseFloat(prompt("Podaj swój adres: "))
 
-
-        document.getElementById("info").innerHTML = `${name} + ${surname} + ${adress}`;
+        //A
+        //document.getElementById("info").innerHTML = name + " " + surname + " " + adress;
+        
+        //b
+        document.getElementById("info").innerHTML = `${name} ${surname} ${adress}`;
+    </script>
     </script>
 
 </body>
