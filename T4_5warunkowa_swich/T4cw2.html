@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        var num1 = Number(prompt("Podaj pierwszą liczbe:"));
+        var num2 = Number(prompt("Podaj drugą liczbe:"));
+        let devide = num1 / num2;
+        if (num2 != 0) {
+            document.getElementById("result").innerHTML = `Wynik to: ${devide}`;
+        }
+        else {
+            document.getElementById("result").innerHTML = `Nie można dzielić przez zero`;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

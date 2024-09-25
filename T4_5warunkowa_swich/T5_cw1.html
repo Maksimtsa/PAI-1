@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="color"></p>
+    <script>
+        let ip = document.getElementById("color");
+        var color = prompt("Podaj kolor po angielsku:")
+        //A
+
+        if (color == "red") {
+            ip.innerHTML = "czerwony";
+        }
+        else if (color == "blue") {
+            ip.innerHTML = "niebieski";
+        }
+        else if (color == "green") {
+            ip.innerHTML = "zielony";
+        }
+        else if (color == "yellow") {
+            ip.innerHTML = "żółty";
+        }
+        else if (color == "purple") {
+            ip.innerHTML = "fioletowy";
+        }
+        else if (color == "white") {
+            ip.innerHTML = "biały";
+        }
+        else if (color == "black") {
+            ip.innerHTML = "czarny";
+        }
+        else if (color == "brown") {
+            ip.innerHTML = "brązowy";
+        }
+        else if (color == "pink") {
+            ip.innerHTML = "różowy";
+        }
+        else if (color == "orange") {
+            ip.innerHTML = "pomarańczowy";
+        }
+        else {
+            ip.innerHTML = "Nie znam takiego koloru"
+        }
+
+        //B
+        switch (color) {
+            case "red":
+                ip.innerHTML = "Czerwony";
+                break;
+            case "blue":
+                ip.innerHTML = "Niebieski";
+                break;
+            case "green":
+                ip.innerHTML = "Zielony";
+                break;
+            case "yellow":
+                ip.innerHTML = "Żółty";
+                break;
+            default:
+                ip.innerHTML = "nie znam takiego koloru";
+        }
+
+    </script>
+</body>
+
+</html>

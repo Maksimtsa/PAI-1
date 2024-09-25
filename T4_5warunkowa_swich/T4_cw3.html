@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="smaller"></p>
+    <p id="same"></p>
+    <script>
+        var num1 = Number(prompt("Podaj pierwszą liczbe:"));
+        var num2 = Number(prompt("Podaj drugą liczbe:"));
+
+        if (num1 < num2) {
+            document.getElementById("smaller").innerHTML = `Liczba pierwsza jest mniejsza ${num1}`;
+        }
+        else if (num2 < num1) {
+            document.getElementById("smaller").innerHTML = `Liczba druga jest mniejsza ${num2}`;
+        }
+        else {
+            document.getElementById("same").innerHTML = `Liczby są równe`;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
