@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        var a = Number(prompt("Podaj Liczbę a "));
+        var b = Number(prompt("Podaj Liczbę b "));
+        var operation = prompt("Podaj teraz operator (+, -, *, /)")
+        let result;
+        // //A
+        // if (operation === '+') {
+        //     result = a + b;
+        // } else if (operation === '-') {
+        //     result = a - b;
+        // } else if (operation === '*') {
+        //     result = a * b;
+        // } else if (operation === '/') {
+        //     result = a / b;
+        // } else {
+        //     result = 'Zły znak';
+        // }
+        // document.getElementById('result').innerHTML = `${a} ${operation} ${b} = ${result}`;
+        //B
+        switch (operation) {
+            case '+':
+                result = a + b;
+                break;
+            case '-':
+                result = a - b;
+                break;
+            case '*':
+                result = a * b;
+                break;
+            case '/':
+                if (b !== 0) {
+                    result = a / b;
+                } else {
+                    result = 'Nie można dzielić przez zero';
+                }
+                break;
+            default:
+                result = 'Zły znak';
+        }
+
+        document.getElementById('result').innerHTML = `${a} ${operation} ${b} = ${result}`
+    </script>
+</body>
+
+</html>

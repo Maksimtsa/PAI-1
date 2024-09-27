@@ -11,9 +11,13 @@
     <p id="Number"></p>
     <script>
         let num = document.getElementById("Number");
-        var Number1 = prompt("Podaj Liczbę");
-        var Number2 = prompt("Podaj Liczbę");
-        if (numbe1)
+        var Number1 = Number(prompt("Podaj Liczbę"));
+        if (Number1 % 2 == 0) {
+            num.innerHTML = `Liczba ${Number1} jest parzysta`;
+        }
+        else {
+            num.innerHTML = `Liczba ${Number1} jest nieparzysta`;
+        }
 
 
     </script>

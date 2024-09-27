@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="Number"></p>
+    <script>
+        let nums = document.getElementById("Number");
+        var Num1 = Number(prompt("Podaj Liczbę 1 "));
+        var Num2 = Number(prompt("Podaj Liczbę 2 "));
+        var Num3 = Number(prompt("Podaj Liczbę 3 "));
+
+        if (Num1 < Num2 && Num2 < Num3) {
+            nums.innerHTML = `najm ${Num1} sr ${Num2} najw ${Num3}`;
+        }
+        else if (Num2 < Num3 && Num3 < Num1) {
+            nums.innerHTML = `najm ${Num2} sr ${Num3} najw ${Num1}`;
+        }
+        else if (Num3 < Num1 && Num1 < Num2) {
+            nums.innerHTML = `najm ${Num3} sr ${Num1} najw ${Num2}`;
+        }
+    </script>
+</body>
+
+</html>
