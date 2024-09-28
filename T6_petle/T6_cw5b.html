@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>*</th>
+            <script>
+                var m = Number(prompt("Wpisz liczbę wierszy:"));
+                var n = Number(prompt("Wpisz liczbę kolumn:"));
+                for (i = 1; i <= n; i++) {
+                    document.write("<th>" + i + "</th>");
+                }
+            </script>
+        </tr>
+
+        <script>
+            for (i = 1; i <= m; i++) {
+                document.write("<tr><th>" + i + "</th>");
+                for (j = 1; j <= n; j++) {
+                    var r = i * j;
+                    document.write("<td>" + r + "</td>");
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+
+</html>
