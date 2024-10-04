@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        function loadNumbers() {
+            const a = parseFloat(prompt("enter the first number"));
+            const b = parseFloat(prompt("enter the second number"));
+            return [a, b];
+        }
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        function subtraction(a, b) {
+            return a - b;
+        }
+
+        function multiplication(a, b) {
+            return a * b;
+        }
+
+        function division(a, b) {
+            if (b === 0) {
+                return "You can't divide by zero";
+            } else {
+                return a / b;
+            }
+        }
+
+        function calc() {
+            const [a, b] = loadNumbers();
+            document.getElementById("result").innerHTML = `addition result: ${sum(a, b)} <br>
+            Subtraction result: ${subtraction(a, b)}<br>
+            Multiplication result: ${multiplication(a, b)}<br>
+            Division result: ${division(a, b)}<br>`
+        }
+        calc();
+
+    </script>
+</body>
+
+</html>
