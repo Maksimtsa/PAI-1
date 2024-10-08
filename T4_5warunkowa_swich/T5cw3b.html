@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Grade"></p>
+    <script>
+        let sch = document.getElementById("Grade");
+        var Grade = Number(prompt("Podaj Ocene"));  
+        switch (Grade) {
+            case 1:
+                sch.innerHTML = "Niedostateczny";
+                break;
+            case 2:
+                sch.innerHTML = "Dopuszczający";
+                break;
+            case 3:
+                sch.innerHTML = "Dostateczny";
+                break;
+            case 4:
+                sch.innerHTML = "Dobry";
+                break;
+            case 5:
+                sch.innerHTML = "Bardzo Dobry";
+                break;
+            case 6:
+                sch.innerHTML = "Celujący";
+                break;
+            default:
+                sch.innerHTML = "Nie ma takiej oceny";
+        }
+    </script>
+</body>
+</html>

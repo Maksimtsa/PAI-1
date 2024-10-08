@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Numbe"></p>
+    <script>
+        var num1 = Number(prompt("Podaj pierwszy numer"));
+        var num2 = Number(prompt("Podaj drugi numer"));
+        var num3 = Number(prompt("Podaj trzeci numer"));
+
+        const numbers = [num1, num2, num3];
+        numbers.sort((a, b) => a - b);
+        document.getElementById("Numbe").innerHtml = numbers.join(", ");
+    </script>
+</body>
+</html>
