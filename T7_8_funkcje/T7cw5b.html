@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T7cw5b</title>
+    <script>
+        const calculateTrapezoidArea = (a, b, h) => {
+            return ((a + b) * h) / 2;
+        };
+
+        const main = () => {
+            const trapezoids = [
+                { a: 5, b: 7, h: 4 },
+                { a: 3, b: 8, h: 5 },
+                { a: 6, b: 10, h: 2 }
+            ];
+
+            trapezoids.forEach(trapezoid => {
+                const area = calculateTrapezoidArea(trapezoid.a, trapezoid.b, trapezoid.h);
+                console.log(`Pole trapezu (a: ${trapezoid.a}, b: ${trapezoid.b}, h: ${trapezoid.h}): ${area}`);
+            });
+        };
+
+        window.onload = main;
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

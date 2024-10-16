@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T7cw4b</title>
+    <script>
+        const commentOnGrade = (grade) => {
+            switch (grade) {
+                case 1:
+                case 2:
+                    return "Sporo pracy przed Tobą.";
+                case 3:
+                    return "Jeszcze trochę, a będzie ok.";
+                default:
+                    return "Okej.";
+            }
+        };
+
+        const main = () => {
+            const grades = [1, 2, 3, 4, 5];
+            grades.forEach(grade => {
+                const comment = commentOnGrade(grade);
+                console.log(`Ocena: ${grade} - ${comment}`);
+            });
+        };
+
+        window.onload = main;
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
