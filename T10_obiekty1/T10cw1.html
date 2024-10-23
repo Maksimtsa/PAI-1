@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="out"></p>
+    <script>
+        const person = {
+            name: 'Szymon',
+            secondName: 'Grygiel',
+            Bdate: '29.10.2009'
+        };
+
+        document.getElementById('out').innerHTML = `
+        imię: ${person.name} <br>
+        nazwisko: ${person.secondName} <br>
+        data ur: ${person.Bdate}`
+
+        console.log(person);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="out"></p>
+    <script>
+        const person = new Object({
+            name: 'Szymon',
+            secondName: 'Grygiel',
+            Bdate: '29.10.2009'
+        })
+        person.street = '23 czerwca'
+        person.housenr = '24'
+        person.zip = '12-345'
+        person.city = 'Poznan'
+
+        document.getElementById('out').innerHTML = `
+        imię: ${person.name} <br>
+        nazwisko: ${person.secondName} <br>
+        data ur: ${person.Bdate} <br>
+        ulica: ${person.street} <br>
+        nr domu: ${person.housenr} <br>
+        nr zip: ${person.zip} <br>
+        miast: ${person.city}`
+
+        console.log(person);
+
+    </script>
+</body>
+
+</html>
