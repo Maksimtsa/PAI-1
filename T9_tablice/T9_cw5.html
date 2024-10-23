@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="output"></p>
+    <p id="output1"></p>
+    <script>
+        let nums = []
+        let sum = 0;
+        for (let i = 0; i < 5; i++) {
+            let input = Number(prompt("Podaj Liczbę"))
+            nums.push(input)
+            document.getElementById('output').innerHTML = `Twoje liczby: ${nums}`;
+        }
+
+        for (let j = 0; j < nums.length; j++) {
+            sum += nums[j]
+        }
+        document.getElementById('output1').innerHTML = `Suma twoich liczb wynosi ${sum}`;
+    </script>
+</body>
+
+</html>
