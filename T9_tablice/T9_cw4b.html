@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="output">
+        <thead>
+            <tr id="headerRow"></tr>
+        </thead>
+        <tbody id="dataRow"></tbody>
+    </table>
+
+    <script>
+        let pinfo = [];
+        let data = ['Imię', 'Nazwisko', 'Wiek', 'Wzrost', 'Data urodzenia', 'Klasa'];
+        let dataRow = "<tr>";
+
+        for (let i = 0; i < data.length; i++) {
+            document.getElementById('headerRow').innerHTML += "<th>" + data[i] + "</th>";
+        }
+
+        for (let i = 0; i < data.length; i++) {
+            let input = prompt("Podaj " + data[i]);
+            pinfo.push(input);
+        }
+
+        for (let i = 0; i < pinfo.length; i++) {
+            dataRow += "<td>" + pinfo[i] + "</td>";
+        }
+        dataRow += "</tr>";
+
+        document.getElementById('dataRow').innerHTML = dataRow;
+    </script>
+</body>
+
+</html>
