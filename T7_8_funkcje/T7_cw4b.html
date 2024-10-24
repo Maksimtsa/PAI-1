@@ -4,33 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T7cw4b</title>
-    <script>
-        const commentOnGrade = (grade) => {
-            switch (grade) {
-                case 1:
-                case 2:
-                    return "Sporo pracy przed Tobą.";
-                case 3:
-                    return "Jeszcze trochę, a będzie ok.";
-                default:
-                    return "Okej.";
-            }
-        };
-
-        const main = () => {
-            const grades = [1, 2, 3, 4, 5];
-            grades.forEach(grade => {
-                const comment = commentOnGrade(grade);
-                console.log(`Ocena: ${grade} - ${comment}`);
-            });
-        };
-
-        window.onload = main;
-    </script>
+    <title>Ocena Ucznia</title>
 </head>
 
 <body>
+    <script>
+        const commentgrade = () => {
+            const grade = parseInt(prompt("Podaj ocenę ucznia (1-5): "));
+            if (grade === 1 || grade === 2) {
+                alert("Sporo pracy przed Tobą");
+            } else if (grade === 3) {
+                alert("Jeszcze trochę, a będzie ok.");
+            } else {
+                alert("Okej");
+            }
+        }
+        commentgrade();
+    </script>
 </body>
 
 </html>
