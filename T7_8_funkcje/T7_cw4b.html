@@ -8,15 +8,16 @@
 </head>
 
 <body>
+    <p id="out"></p>
     <script>
         const commentgrade = () => {
-            const grade = parseInt(prompt("Podaj ocenę ucznia (1-5): "));
+            const grade = parseInt(prompt("Podaj ocenę (1-5): "));
             if (grade === 1 || grade === 2) {
-                alert("Sporo pracy przed Tobą");
+                document.getElementById('out').innerHTML = `Sporo pracy przed Tobą`
             } else if (grade === 3) {
-                alert("Jeszcze trochę, a będzie ok.");
+                document.getElementById('out').innerHTML = `Jeszcze trochę, a będzie ok.`
             } else {
-                alert("Okej");
+                document.getElementById('out').innerHTML = `Okej`
             }
         }
         commentgrade();
