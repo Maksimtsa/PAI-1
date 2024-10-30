@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="output"></p>
+    <script>
+        const person = {
+            name: "",
+            secondname: "",
+            height: "",
+            weight: "",
+            greeting() {
+                return `Witaj ${this.name} ${this.secondname} <br>`;
+            },
+            info() {
+                return ` Twój wzrost: ${this.height}<br> Twoja waga: ${this.weight}`;
+            }
+        }
+        person.name = prompt("Podaj swoje imię:")
+        person.secondname = prompt("Podaj swoje nazwisko:")
+        person.height = prompt("Podaj swoją wysokość:")
+        person.weight = prompt("Podaj swoją wage:")
+
+        document.getElementById('output').innerHTML = person.greeting() + person.info()
+
+        person.greeting();
+        person.info();
+    </script>
+</body>
+
+</html>

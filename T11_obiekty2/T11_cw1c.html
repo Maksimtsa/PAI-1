@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="output"></p>
+    <p id="output1"></p>
+    <script>
+        class person {
+            constructor(name, secondname, height, weight) {
+                this.name = name;
+                this.secondname = secondname;
+                this.height = height;
+                this.weight = weight;
+            }
+            greeting() {
+                return `Witaj ${this.name} ${this.secondname}`;
+            }
+            info() {
+                return ` Twój wzrost: ${this.height}<br> Twoja waga: ${this.weight}`;
+            }
+        }
+
+        const person1 = new person('Szymon', 'Grygiel', 182, 68);
+
+        document.getElementById('output').innerHTML = person1.greeting() + person1.info()
+
+    </script>
+</body>
+
+</html>
