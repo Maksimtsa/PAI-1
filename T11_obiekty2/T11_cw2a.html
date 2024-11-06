@@ -9,8 +9,6 @@
 
 <body>
     <p id="out"></p>
-    <p id="out1"></p>
-    <p id="out2"></p>
     <script>
         function Triangle(a, b) {
             this.a = a;
@@ -32,9 +30,13 @@
 
         const triangle = new Triangle(a, b);
 
-        document.getElementById('out').innerHTML = `Długośc przeciwprostokątnej: ${triangle.hypotenuse().toFixed(2)}`;
-        document.getElementById('out1').innerHTML = `Pole: ${triangle.area()}`;
-        document.getElementById('out2').innerHTML = `Obwód: ${triangle.circuit()}`;
+        let outputHTML = '';
+        outputHTML += `<p>Długość przeciwprostokątnej: ${triangle.hypotenuse()}</p>`;
+        outputHTML += `<p>Pole: ${triangle.area()}</p>`;
+        outputHTML += `<p>Obwód: ${triangle.circuit()}</p>`;
+
+
+        document.getElementById('out').innerHTML = outputHTML;
 
     </script>
 </body>

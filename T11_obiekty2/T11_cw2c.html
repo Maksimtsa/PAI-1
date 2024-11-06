@@ -8,25 +8,26 @@
 </head>
 
 <body>
-    <div id="output"></div>
-
+    <p id="output"></p>
     <script>
-        function Triangle(a, b) {
-            this.a = a;
-            this.b = b;
 
-            this.hypotenuse = function () {
+        class Triangle {
+            constructor(a, b) {
+                this.a = a;
+                this.b = b;
+            }
+
+            hypotenuse() {
                 return Math.sqrt(this.a * this.a + this.b * this.b);
             };
-            this.area = function () {
+            area() {
                 return (this.a * this.b) / 2;
             };
-            this.circuit = function () {
+            circuit() {
                 const c = this.hypotenuse();
                 return this.a + this.b + c;
             };
         }
-
         const triangles = [
             new Triangle(3, 5),
             new Triangle(6, 4),
@@ -35,13 +36,13 @@
 
         let outputHTML = '';
         for (let i = 0; i < triangles.length; i++) {
-            outputHTML += `<h2>Trójkąt ${i + 1}</h2>`;
+            outputHTML += `<h2>Trójkąt ${i + 1} o długości boków ${triangles[0]} i ${triangles[1]}</h2>`;
             outputHTML += `<p>Długość przeciwprostokątnej: ${triangles[i].hypotenuse()}</p>`;
             outputHTML += `<p>Pole: ${triangles[i].area()}</p>`;
             outputHTML += `<p>Obwód: ${triangles[i].circuit()}</p>`;
         }
-
         document.getElementById('output').innerHTML = outputHTML;
+
     </script>
 </body>
 
