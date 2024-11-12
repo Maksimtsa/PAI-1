@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Losowanie Lotto</title>
 </head>
-
 <body>
-    <script>
-        function Lotto(params) {
+    <h1>Losowanie Lotto</h1>
+    <button onclick="losujLiczby()">Losuj liczby</button>
+    <p id="wynik"></p>
 
+    <script>
+        function losujLiczby() {
+            let liczby = new Set();
+            while (liczby.size < 6) {
+                let liczba = Math.floor(Math.random() * 49) + 1;
+                liczby.add(liczba);
+            }
+            document.getElementById("wynik").textContent = "Wylosowane liczby: " + [...liczby].join(", ");
         }
     </script>
 </body>
-
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="out"></p>
+    <script>
+        let text = prompt("Podaj tekst");
+        let textlower = text.toLowerCase();
+        let textupper = text.toUpperCase();
+        document.getElementById("out").innerHTML = `Tekst małymi literami: ${textlower}<br> Tekst wielkimi literami: ${textupper}`;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dzień w formie słownej</title>
+</head>
+<body>
+    <p id="out"></p>
+
+    <script>
+        const weekdays = ["niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota"];
+        const months = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
+
+        function wyswietlDate() {
+            let now = new Date();
+            let weekday = weekdays[now.getDay()];
+            let monthday = now.getDate();
+            let month = months[now.getMonth()];
+            document.getElementById("out").innerHTML = `${weekday}, ${monthday} ${month}`;
+        }
+
+        wyswietlDate();
+    </script>
+</body>
+</html>
